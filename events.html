@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onBlur Example</title>
+    <script>
+        function handleBlur() {
+            var inputValue = document.getElementById("nameInput").value;
+            document.getElementById("output").innerHTML = "You entered: " + inputValue;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>onBlur Event Example</h2>
+
+    <label for="nameInput">Enter your name:</label>
+    <input type="text" id="nameInput" onblur="handleBlur()">
+
+    <p id="output"></p>
+</body>
+
+</html>
